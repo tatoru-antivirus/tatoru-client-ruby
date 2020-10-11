@@ -4,8 +4,10 @@ require "httparty"
 require "zeitwerk"
 loader = Zeitwerk::Loader.for_gem
 loader.ignore "*~"
-loader.do_not_eager_load("#{__dir__}/tatoru/client/engine")
-loader.log!
+unless defined?(Rails)
+  loader.do_not_eager_load("#{__dir__}/tatoru/client/engine")
+  loader.do_not_eager_load("#{__dir__}/generators")
+end
 loader.setup
 
 module Tatoru
@@ -17,14 +19,7 @@ module Tatoru
     def self.root
       Pathname.new(::File.dirname(__dir__))
     end
-
-    # def self.safe?(url)
-    #   Scanner.safe?(url)
-    # end
-
-    # def self.virus?(url)
-    #   Scanner.virus?(url)
-    # end
   end
 end
 
+Tatoru::Client::Engine if defined?(Rails)

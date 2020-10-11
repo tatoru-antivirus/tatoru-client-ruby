@@ -98,3 +98,7 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require "tatoru_client"
+
+Dir[Tatoru::Client.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }

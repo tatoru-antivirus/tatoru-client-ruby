@@ -1,55 +1,27 @@
 module Tatoru
   module Client
     class Configuration
-      include Singleton 
+      class << self
+        extend Forwardable
 
-      def self.values
-        instance.values
-      end
+        attr_accessor :values
 
-      def self.values=(values)
-        instance.values = values
-      end
-      
-      def values
-        (@values ||= {})
-      end
+        def define_option(key, default: nil)
+          @values[key] = default
+          define_singleton_method(key) do
+            @values[key]
+          end
 
-      def values=(values)
-        @values = values
-      end
-
-      def self.region
-        instance.region
+          define_singleton_method("#{key}=") do |value|
+            @values[key] = value
+          end
+        end
       end
 
-      def self.region=(value)
-        instance.region = value
-      end
-      
-      def region
-        values[:region] ||= "staging-eu-api"
-      end
+      @values = {}
 
-      def region=(value)
-        @values[:region] = value
-      end
-
-      def self.api_token
-        instance.api_token
-      end
-
-      def self.api_token=(value)
-        instance.api_token = value
-      end
-      
-      def api_token
-        values[:api_token] ||= "189b4b6c94917d2eeb5ea69da334d04c"
-      end
-
-      def api_token=(value)
-        @values[:api_token] = value
-      end
+      define_option :region, default: "us"
+      define_option :api_token, default: "<your-api-token>"
     end
   end
 end
