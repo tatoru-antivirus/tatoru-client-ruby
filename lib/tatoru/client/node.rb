@@ -52,7 +52,7 @@ module Tatoru
         httparty_options = [
           :post,
           "#{base_url}/scans",
-          body: { scan: { asset: open(file) } },
+          body: { scan: { asset: open(file), filename: file } },
           headers: { 
             "Authorization" => "Bearer #{api_token}",
           }
