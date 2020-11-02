@@ -22,6 +22,10 @@ module Tatoru
 
       define_option :region, default: "us"
       define_option :api_token, default: "<your-api-token>"
+
+      def self.base_url
+        "https://#{region}-api.tatoru.io"
+      end
     end
   end
 end

@@ -74,7 +74,7 @@ module Tatoru
       end
 
       def base_url
-        "https://#{@configuration.region}-api.tatoru.io"
+        @configuration.base_url
       end
     end
   end

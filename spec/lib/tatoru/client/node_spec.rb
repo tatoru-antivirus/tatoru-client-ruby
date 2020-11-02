@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'spec_helper'
 require 'tatoru_client'
 
-RSpec.describe Tatoru::Client::Node do
+RSpec.describe Tatoru::Client::Node, vcr: true do
   it { expect(subject).to respond_to(:scan_url) }
   it { expect(subject).to respond_to(:scan_file) }
   it { expect(subject).to respond_to(:status) }

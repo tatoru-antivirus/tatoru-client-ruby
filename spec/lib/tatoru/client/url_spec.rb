@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'spec_helper'
 require 'tatoru_client'
 
-RSpec.describe Tatoru::Client::Url do
+RSpec.describe Tatoru::Client::Url, vcr: true do
   it { expect(described_class).to respond_to(:safe?) }
 
   describe "class methods" do

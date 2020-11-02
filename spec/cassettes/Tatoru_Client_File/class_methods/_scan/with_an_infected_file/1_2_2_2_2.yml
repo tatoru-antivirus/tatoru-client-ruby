@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3002/scans
+    body:
+      encoding: UTF-8
+      base64_string: |
+        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS00b25xYzl2dlJYWXdic05kDQpD
+        b250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InNjYW5bYXNz
+        ZXRdIjsgZmlsZW5hbWU9ImluZmVjdGVkLnppcCINCkNvbnRlbnQtVHlwZTog
+        YXBwbGljYXRpb24vemlwDQoNClBLAwQKAAAAAADgmLgoPM9RaEQAAABEAAAA
+        CQAAAGVpY2FyLmNvbVg1TyFQJUBBUFs0XFBaWDU0KFBeKTdDQyk3fSRFSUNB
+        Ui1TVEFOREFSRC1BTlRJVklSVVMtVEVTVC1GSUxFISRIK0gqUEsBAhQACgAA
+        AAAA4Ji4KDzPUWhEAAAARAAAAAkAAAAAAAAAAQAgAP+BAAAAAGVpY2FyLmNv
+        bVBLBQYAAAAAAQABADcAAABrAAAAAAANCi0tLS0tLS0tLS0tLS0tLS0tLS0t
+        LS0tLS0tNG9ucWM5dnZSWFl3YnNOZA0KQ29udGVudC1EaXNwb3NpdGlvbjog
+        Zm9ybS1kYXRhOyBuYW1lPSJzY2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvdmFn
+        cmFudC9wcm9qZWN0cy90YXRvcnUvdGF0b3J1X2NsaWVudC1ydWJ5L3NwZWMv
+        ZmlsZXMvaW5mZWN0ZWQuemlwDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+        LTRvbnFjOXZ2UlhZd2JzTmQtLQ0K
+    headers:
+      Authorization:
+      - Bearer 664ab6f4e96945710029f4c7d0dc7561
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - multipart/form-data; boundary=------------------------4onqc9vvRXYwbsNd
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ab272cef34157567b46ecb824726a253"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 791d3b60-8907-40b2-b4e4-8fcaf30504a1
+      X-Runtime:
+      - '0.820714'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"uuid":"5c69d575-eb82-4d21-aef8-d57c08cd8321","status":"infected","callback_url":null,"url":null,"filename":"infected.zip","content_length":"184","sha1":"d27265074c9eac2e2122ed69294dbc4d7cce9141","matches":["Win.Test.EICAR_HDB-1"],"created_at":"2020-11-02T19:17:30.540Z","updated_at":"2020-11-02T19:17:30.982Z"}'
+  recorded_at: Mon, 02 Nov 2020 19:17:31 GMT
+recorded_with: VCR 6.0.0
