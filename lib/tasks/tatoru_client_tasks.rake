@@ -6,8 +6,7 @@ namespace :tatoru_client do
       puts "#{k}: #{v}"
     end
 
-    unless status['authorized'
-    ]
+    unless status['authorized']
       if Tatoru::Client.const_defined?("Engine")
         puts "The client could not authorize. Please make you have configured your api token in config/initializers/tatoru_client.rb"
       else

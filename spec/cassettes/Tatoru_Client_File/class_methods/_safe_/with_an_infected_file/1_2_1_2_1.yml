@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       base64_string: |
-        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1tT0I3TVNZN05xbFpfZXRsDQpD
+        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1uanlXbC0xZVhXSXZFQ0VBDQpD
         b250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InNjYW5bYXNz
         ZXRdIjsgZmlsZW5hbWU9ImluZmVjdGVkLnppcCINCkNvbnRlbnQtVHlwZTog
         YXBwbGljYXRpb24vemlwDQoNClBLAwQKAAAAAADgmLgoPM9RaEQAAABEAAAA
@@ -14,14 +14,14 @@ http_interactions:
         Ui1TVEFOREFSRC1BTlRJVklSVVMtVEVTVC1GSUxFISRIK0gqUEsBAhQACgAA
         AAAA4Ji4KDzPUWhEAAAARAAAAAkAAAAAAAAAAQAgAP+BAAAAAGVpY2FyLmNv
         bVBLBQYAAAAAAQABADcAAABrAAAAAAANCi0tLS0tLS0tLS0tLS0tLS0tLS0t
-        LS0tLS0tbU9CN01TWTdOcWxaX2V0bA0KQ29udGVudC1EaXNwb3NpdGlvbjog
-        Zm9ybS1kYXRhOyBuYW1lPSJzY2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvdmFn
-        cmFudC9wcm9qZWN0cy90YXRvcnUvdGF0b3J1X2NsaWVudC1ydWJ5L3NwZWMv
-        ZmlsZXMvaW5mZWN0ZWQuemlwDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
-        LW1PQjdNU1k3TnFsWl9ldGwtLQ0K
+        LS0tLS0tbmp5V2wtMWVYV0l2RUNFQQ0KQ29udGVudC1EaXNwb3NpdGlvbjog
+        Zm9ybS1kYXRhOyBuYW1lPSJzY2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvcm9i
+        by9wcm9qZWN0cy90YXRvcnUvdGF0b3J1X2NsaWVudC1ydWJ5L3NwZWMvZmls
+        ZXMvaW5mZWN0ZWQuemlwDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLW5q
+        eVdsLTFlWFdJdkVDRUEtLQ0K
     headers:
       Authorization:
-      - Bearer 664ab6f4e96945710029f4c7d0dc7561
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -29,7 +29,7 @@ http_interactions:
       User-Agent:
       - Ruby
       Content-Type:
-      - multipart/form-data; boundary=------------------------mOB7MSY7NqlZ_etl
+      - multipart/form-data; boundary=------------------------njyWl-1eXWIvECEA
   response:
     status:
       code: 201
@@ -50,17 +50,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"30ec63633bd7aea6ab46e3b565d6e097"
+      - W/"6462f5026c7dba425d1afb4d2053d428"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - baec83cb-4aa0-46be-abb1-6d1c5df071bb
+      - d285fda1-adb5-47de-8771-bc4cc2df6361
       X-Runtime:
-      - '0.488086'
+      - '0.291929'
+      Vary:
+      - Origin
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"uuid":"e8b2bdb3-c823-476c-bf85-a6ecbdb61bf9","status":"infected","callback_url":null,"url":null,"filename":"infected.zip","content_length":"184","sha1":"d27265074c9eac2e2122ed69294dbc4d7cce9141","matches":["Win.Test.EICAR_HDB-1"],"created_at":"2020-11-02T19:17:26.365Z","updated_at":"2020-11-02T19:17:26.774Z"}'
-  recorded_at: Mon, 02 Nov 2020 19:17:26 GMT
+      string: '{"uuid":"b80a47f1-be4b-4472-b949-27495470afe5","status":"infected","callback_url":null,"url":null,"filename":"infected.zip","content_length":"184","sha1":"d27265074c9eac2e2122ed69294dbc4d7cce9141","matches":["Win.Test.EICAR_HDB-1"],"created_at":"2021-07-15T00:23:25.641Z","updated_at":"2021-07-15T00:23:25.770Z"}'
+  recorded_at: Thu, 15 Jul 2021 00:23:25 GMT
 recorded_with: VCR 6.0.0

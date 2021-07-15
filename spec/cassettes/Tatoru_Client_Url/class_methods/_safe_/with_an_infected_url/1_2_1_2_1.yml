@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3002/scans
+    body:
+      encoding: UTF-8
+      string: scan%5Burl%5D=https%3A%2F%2Fsecure.eicar.org%2Feicar.com
+    headers:
+      Authorization:
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ebcb60e43c49d90d27288cd4f37a4e9c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 576aa764-dbf6-4566-8f9d-affa03bdc4bc
+      X-Runtime:
+      - '0.483379'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"uuid":"5879e503-6022-4e73-bd67-446c0faf4110","status":"infected","callback_url":null,"url":"https://secure.eicar.org/eicar.com","filename":"eicar.com","content_length":"68","sha1":"3395856ce81f2b7382dee72602f798b642f14140","matches":["Win.Test.EICAR_HDB-1"],"created_at":"2021-07-15T00:22:50.447Z","updated_at":"2021-07-15T00:22:50.696Z"}'
+  recorded_at: Thu, 15 Jul 2021 00:22:50 GMT
+recorded_with: VCR 6.0.0

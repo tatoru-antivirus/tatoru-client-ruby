@@ -67,6 +67,24 @@ module Tatoru
         end
       end
 
+      def get_scan(uuid)
+        httparty_options = [
+          :get,
+          "#{base_url}/scans/#{uuid}",
+          headers: {
+            "Authorization" => "Bearer #{api_token}",
+          }
+        ]
+
+        result = HTTParty.send(*httparty_options)
+
+        if result.ok?
+          JSON.parse(result.body)
+        else
+          raise Tatoru::Client::NodeError.new("HTTP error #{result.code} getting scan #{uuid}: #{result.body}")
+        end
+      end
+
       private
 
       def api_token

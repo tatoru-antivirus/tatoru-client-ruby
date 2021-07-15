@@ -4,8 +4,8 @@ require 'tatoru_client'
 
 RSpec.describe Tatoru::Client::File, vcr: true do
   before(:each) do
-    allow(Tatoru::Client::Configuration).to receive(:api_token).and_return("664ab6f4e96945710029f4c7d0dc7561")
     allow(Tatoru::Client::Configuration).to receive(:base_url).and_return("http://localhost:3002")
+    allow(Tatoru::Client::Configuration).to receive(:api_token).and_return("31e37aa387cf0eb628d6e44cf457f4e2")
   end
 
   it { expect(described_class).to respond_to(:safe?) }

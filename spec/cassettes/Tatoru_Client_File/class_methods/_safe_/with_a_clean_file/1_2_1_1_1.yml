@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       base64_string: |
-        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1ZMklpWk9qbGotcWFlQjJpDQpD
+        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS10THBMUGMyR2k4SjBYc2xKDQpD
         b250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InNjYW5bYXNz
         ZXRdIjsgZmlsZW5hbWU9ImNsZWFuLnBkZiINCkNvbnRlbnQtVHlwZTogYXBw
         bGljYXRpb24vcGRmDQoNCiVQREYtMS40CiXDpMO8w7bDnwoyIDAgb2JqCjw8
@@ -304,14 +304,14 @@ http_interactions:
         Cjw8L1NpemUgMTYvUm9vdCAxNCAwIFIKL0luZm8gMTUgMCBSCi9JRCBbIDxG
         N0Q3N0IzRDIyQjlGOTI4MjlENDlGRjVENzhCOEYyOD4KPEY3RDc3QjNEMjJC
         OUY5MjgyOUQ0OUZGNUQ3OEI4RjI4PiBdCj4+CnN0YXJ0eHJlZgoxMjc4Nwol
-        JUVPRgoNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tWTJJaVpPamxqLXFh
-        ZUIyaQ0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJz
-        Y2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvdmFncmFudC9wcm9qZWN0cy90YXRv
-        cnUvdGF0b3J1X2NsaWVudC1ydWJ5L3NwZWMvZmlsZXMvY2xlYW4ucGRmDQot
-        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVkySWlaT2psai1xYWVCMmktLQ0K
+        JUVPRgoNCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tdExwTFBjMkdpOEow
+        WHNsSg0KQ29udGVudC1EaXNwb3NpdGlvbjogZm9ybS1kYXRhOyBuYW1lPSJz
+        Y2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvcm9iby9wcm9qZWN0cy90YXRvcnUv
+        dGF0b3J1X2NsaWVudC1ydWJ5L3NwZWMvZmlsZXMvY2xlYW4ucGRmDQotLS0t
+        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLXRMcExQYzJHaThKMFhzbEotLQ0K
     headers:
       Authorization:
-      - Bearer 664ab6f4e96945710029f4c7d0dc7561
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -319,7 +319,7 @@ http_interactions:
       User-Agent:
       - Ruby
       Content-Type:
-      - multipart/form-data; boundary=------------------------Y2IiZOjlj-qaeB2i
+      - multipart/form-data; boundary=------------------------tLpLPc2Gi8J0XslJ
   response:
     status:
       code: 201
@@ -340,17 +340,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"da85b6d068bb1228f48279e9b8ca6f9c"
+      - W/"cf095172c7e7340d1a5fc1f8285e7e25"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bffa5879-b135-4ac2-bf3d-4bf0e34eb90d
+      - 66676951-00a4-4ffc-8516-10b3f3871af4
       X-Runtime:
-      - '1.664697'
+      - '0.282468'
+      Vary:
+      - Origin
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"uuid":"9420569b-47fb-47da-9a7a-d38d2111c7e5","status":"clean","callback_url":null,"url":null,"filename":"clean.pdf","content_length":"13264","sha1":"90ffd2359008d82298821d16b21778c5c39aec36","matches":[],"created_at":"2020-11-02T19:15:54.981Z","updated_at":"2020-11-02T19:15:55.730Z"}'
-  recorded_at: Mon, 02 Nov 2020 19:15:55 GMT
+      string: '{"uuid":"007ef76a-bb06-4c6b-8b75-8b1c445648e1","status":"clean","callback_url":null,"url":null,"filename":"clean.pdf","content_length":"13264","sha1":"90ffd2359008d82298821d16b21778c5c39aec36","matches":[],"created_at":"2021-07-15T00:23:25.345Z","updated_at":"2021-07-15T00:23:25.502Z"}'
+  recorded_at: Thu, 15 Jul 2021 00:23:25 GMT
 recorded_with: VCR 6.0.0

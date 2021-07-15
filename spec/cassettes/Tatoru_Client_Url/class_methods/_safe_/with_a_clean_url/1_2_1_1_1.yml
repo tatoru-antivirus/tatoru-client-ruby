@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3002/scans
+    body:
+      encoding: UTF-8
+      string: scan%5Burl%5D=https%3A%2F%2Fwww.w3.org%2FWAI%2FER%2Ftests%2Fxhtml%2Ftestfiles%2Fresources%2Fpdf%2Fdummy.pdf
+    headers:
+      Authorization:
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9526231bd63f192cb679c2cd2f5a42ec"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 31ee1cce-7094-41de-86f0-3b35425e8a66
+      X-Runtime:
+      - '0.907397'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"uuid":"cc85e10c-ad21-4c02-a350-78f64d731b45","status":"clean","callback_url":null,"url":"https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf","filename":"dummy.pdf","content_length":"13264","sha1":"90ffd2359008d82298821d16b21778c5c39aec36","matches":[],"created_at":"2021-07-15T00:22:49.536Z","updated_at":"2021-07-15T00:22:50.300Z"}'
+  recorded_at: Thu, 15 Jul 2021 00:22:50 GMT
+recorded_with: VCR 6.0.0
