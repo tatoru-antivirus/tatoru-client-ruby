@@ -1,7 +1,3 @@
-require 'bundler/setup'
-require 'spec_helper'
-require 'tatoru_client'
-
 RSpec.describe Tatoru::Client::File, vcr: true do
   before(:each) do
     allow(Tatoru::Client::Configuration).to receive(:base_url).and_return("http://localhost:3002")

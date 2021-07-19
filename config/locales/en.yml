@@ -1,4 +1,0 @@
-en:
-  errors:
-    messages:
-      contains_malware: "contains malware: %{matches}"

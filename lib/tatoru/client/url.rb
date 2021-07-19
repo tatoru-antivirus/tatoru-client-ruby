@@ -1,5 +1,3 @@
-require 'pry'
-
 module Tatoru
   module Client
     class Url

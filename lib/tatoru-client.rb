@@ -1,0 +1,1 @@
+require 'tatoru_client'

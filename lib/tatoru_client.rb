@@ -4,10 +4,7 @@ require "httparty"
 require "zeitwerk"
 loader = Zeitwerk::Loader.for_gem
 loader.ignore "*~"
-unless defined?(Rails)
-  loader.do_not_eager_load("#{__dir__}/tatoru/client/engine")
-  loader.do_not_eager_load("#{__dir__}/generators")
-end
+loader.ignore "#{__dir__}/tatoru-client.rb"
 loader.setup
 
 module Tatoru
@@ -22,4 +19,4 @@ module Tatoru
   end
 end
 
-Tatoru::Client::Engine if defined?(Rails)
+# require 'tatoru/client'

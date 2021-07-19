@@ -5,10 +5,10 @@ require "tatoru/client/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
-  spec.name        = "tatoru_client"
+  spec.name        = "tatoru-client"
   spec.version     = Tatoru::Client::VERSION
-  spec.authors     = ["Roberto Vasquez Angel"]
-  spec.email       = ["roberto@vasquez-angel.de"]
+  spec.authors     = ["BeeGood IT"]
+  spec.email       = ["info@beegoodit.de"]
   spec.homepage    = "https://www.tatoru.io"
   spec.summary     = "Tatoru Anti Virus Client."
   spec.license     = "Open source"

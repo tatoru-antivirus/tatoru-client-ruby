@@ -99,6 +99,6 @@ RSpec.configure do |config|
 =end
 end
 
-require "tatoru_client"
+require "tatoru-client"
 
 Dir[Tatoru::Client.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
