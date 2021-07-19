@@ -4,13 +4,13 @@ A simple ruby client for remote anti virus scanning with tatoru.io.
 
 ## Usage with rails
 
-See [tatoru-client-rails](https://github.com/tatoru-antivirus/tatoru_client-ruby) if you are using rails.
+See [tatoru-client-rails](https://github.com/tatoru-antivirus/tatoru-client-rails) if you are using rails.
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'tatoru_client'
+gem 'tatoru-client'
 ```
 
 And then execute:
@@ -20,7 +20,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install tatoru_client
+$ gem install tatoru-client
 ```
 
 ## Setup
