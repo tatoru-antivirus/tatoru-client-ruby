@@ -3,6 +3,7 @@ require "httparty"
 
 require "zeitwerk"
 loader = Zeitwerk::Loader.for_gem
+loader.inflector.inflect "version" => "VERSION"
 loader.ignore "*~"
 loader.ignore "#{__dir__}/tatoru-client.rb"
 loader.setup
