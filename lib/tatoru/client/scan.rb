@@ -29,6 +29,10 @@ module Tatoru
       def scan
         @node.get_scan(@uuid)
       end
+
+      def status
+        scan['status']
+      end
     end
   end
 end

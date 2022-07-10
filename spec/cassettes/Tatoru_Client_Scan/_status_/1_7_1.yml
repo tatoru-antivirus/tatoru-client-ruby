@@ -1,0 +1,118 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3002/scans
+    body:
+      encoding: UTF-8
+      base64_string: |
+        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1OR1RadmxBUktwY1hrY1hUDQpD
+        b250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InNjYW5bYXNz
+        ZXRdIjsgZmlsZW5hbWU9ImluZmVjdGVkLnppcCINCkNvbnRlbnQtVHlwZTog
+        YXBwbGljYXRpb24vemlwDQoNClBLAwQKAAAAAADgmLgoPM9RaEQAAABEAAAA
+        CQAAAGVpY2FyLmNvbVg1TyFQJUBBUFs0XFBaWDU0KFBeKTdDQyk3fSRFSUNB
+        Ui1TVEFOREFSRC1BTlRJVklSVVMtVEVTVC1GSUxFISRIK0gqUEsBAhQACgAA
+        AAAA4Ji4KDzPUWhEAAAARAAAAAkAAAAAAAAAAQAgAP+BAAAAAGVpY2FyLmNv
+        bVBLBQYAAAAAAQABADcAAABrAAAAAAANCi0tLS0tLS0tLS0tLS0tLS0tLS0t
+        LS0tLS0tTkdUWnZsQVJLcGNYa2NYVA0KQ29udGVudC1EaXNwb3NpdGlvbjog
+        Zm9ybS1kYXRhOyBuYW1lPSJzY2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvcm9i
+        by9wcm9qZWN0cy90YXRvcnUvdGF0b3J1LWNsaWVudC1ydWJ5L3NwZWMvZmls
+        ZXMvaW5mZWN0ZWQuemlwDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLU5H
+        VFp2bEFSS3BjWGtjWFQtLQ0K
+    headers:
+      Authorization:
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - multipart/form-data; boundary=------------------------NGTZvlARKpcXkcXT
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"876f7d8537b2b940d8bd244d51003865"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ce4079f5-fa92-42f7-bc4b-359059b9f481
+      X-Runtime:
+      - '0.242269'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"uuid":"f064d49b-4b42-45c3-aa46-0d8f7e134330","status":"infected","callback_url":null,"url":null,"filename":"infected.zip","content_length":"184","sha1":"d27265074c9eac2e2122ed69294dbc4d7cce9141","matches":["Win.Test.EICAR_HDB-1"],"created_at":"2021-10-26T22:13:36.999Z","updated_at":"2021-10-26T22:13:37.071Z"}'
+  recorded_at: Tue, 26 Oct 2021 22:13:37 GMT
+- request:
+    method: get
+    uri: http://localhost:3002/scans/f064d49b-4b42-45c3-aa46-0d8f7e134330
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"876f7d8537b2b940d8bd244d51003865"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 283a3c58-04d8-43ca-a6a8-6f3b63b9f557
+      X-Runtime:
+      - '0.007413'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"uuid":"f064d49b-4b42-45c3-aa46-0d8f7e134330","status":"infected","callback_url":null,"url":null,"filename":"infected.zip","content_length":"184","sha1":"d27265074c9eac2e2122ed69294dbc4d7cce9141","matches":["Win.Test.EICAR_HDB-1"],"created_at":"2021-10-26T22:13:36.999Z","updated_at":"2021-10-26T22:13:37.071Z"}'
+  recorded_at: Tue, 26 Oct 2021 22:13:37 GMT
+recorded_with: VCR 6.0.0

@@ -31,4 +31,10 @@ RSpec.describe Tatoru::Client::Scan, vcr: true do
 
     it { expect(subject).to be_falsey }
   end
+
+  describe "#status?" do
+    subject { described_class.new(uuid).status }
+
+    it { expect(subject).to eq("infected") }
+  end
 end

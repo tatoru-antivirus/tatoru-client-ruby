@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3002/scans
+    body:
+      encoding: UTF-8
+      base64_string: |
+        LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1jNDk2V1JFek9BNnNtTlpXDQpD
+        b250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InNjYW5bYXNz
+        ZXRdIjsgZmlsZW5hbWU9ImluZmVjdGVkLnppcCINCkNvbnRlbnQtVHlwZTog
+        YXBwbGljYXRpb24vemlwDQoNClBLAwQKAAAAAADgmLgoPM9RaEQAAABEAAAA
+        CQAAAGVpY2FyLmNvbVg1TyFQJUBBUFs0XFBaWDU0KFBeKTdDQyk3fSRFSUNB
+        Ui1TVEFOREFSRC1BTlRJVklSVVMtVEVTVC1GSUxFISRIK0gqUEsBAhQACgAA
+        AAAA4Ji4KDzPUWhEAAAARAAAAAkAAAAAAAAAAQAgAP+BAAAAAGVpY2FyLmNv
+        bVBLBQYAAAAAAQABADcAAABrAAAAAAANCi0tLS0tLS0tLS0tLS0tLS0tLS0t
+        LS0tLS0tYzQ5NldSRXpPQTZzbU5aVw0KQ29udGVudC1EaXNwb3NpdGlvbjog
+        Zm9ybS1kYXRhOyBuYW1lPSJzY2FuW2ZpbGVuYW1lXSINCg0KL2hvbWUvcm9i
+        by9wcm9qZWN0cy90YXRvcnUvdGF0b3J1LWNsaWVudC1ydWJ5L3NwZWMvZmls
+        ZXMvaW5mZWN0ZWQuemlwDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLWM0
+        OTZXUkV6T0E2c21OWlctLQ0K
+    headers:
+      Authorization:
+      - Bearer 31e37aa387cf0eb628d6e44cf457f4e2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - multipart/form-data; boundary=------------------------c496WREzOA6smNZW
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - text/html
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - b654cfe4-ae96-403a-a726-0c2c7db61cce
+      X-Runtime:
+      - '0.104306'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Tue, 26 Oct 2021 13:39:21 GMT
+recorded_with: VCR 6.0.0
